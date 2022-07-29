@@ -43,6 +43,7 @@ xticks_list = [cls_list[ind] for ind in od.keys()]
 plt.figure(figsize=(15,12))
 plt.barh(list(od.keys()), list(od.values()))
 plt.yticks(list(od.keys()), xticks_list)#, rotation=-90)
+plt.xlabel('number')
 plt.gca().invert_yaxis()
 plt.grid()
 # https://matplotlib.org/stable/gallery/lines_bars_and_markers/barh.html
